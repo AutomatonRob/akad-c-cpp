@@ -1,3 +1,7 @@
+/*
+ * Program receives the input of two integers and outputs a range of chars between the start and end value.
+ */
+
 #include <stdio.h>
 
 int main() {
@@ -20,6 +24,6 @@ int main() {
     for (int i = begin; i <= end; i++) {
         printf("\n%i\t%c", i, i);
     }
-    
+
     return 0;
 }
