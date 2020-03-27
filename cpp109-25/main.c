@@ -6,19 +6,32 @@
 #include <stdlib.h>
 #include <float.h>
 
+// GLOBALS
 #define MAX_SIZE 23
 
+// Function prototypes
+void eulerPrecision();
+
 int main() {
-    double precision, euler, approximation, n;
+    eulerPrecision();
+    return 0;
+}
+
+void eulerPrecision() {
+    long double precision, euler, approximation, n;
+    int isEqual = 0;
+    long faculty = 0;
+    char precisionString[MAX_SIZE];
+
     approximation = 0.0;
     euler = 1.0;
     n = 1.0;
 
-    int isEqual, faculty;
-    faculty = 0;
-    isEqual = 0;
-
-    char precisionString[MAX_SIZE];
+    printf("\n##############################################");
+    printf("\nProgram calculates the value of EULER's number");
+    printf("\nup to a certain precision entered by the user.");
+    printf("\n##############################################");
+    printf("\n\n");
 
     printf("Please indicate the required precision (e.g.: 0.0001): ");
     fflush(stdin);
@@ -36,9 +49,7 @@ int main() {
         }
     } while (isEqual == 0);
 
-    printf("\nEULER's number: %.*lf", DECIMAL_DIG, euler);
-    printf("\nPrecision: %.*lf", DECIMAL_DIG, precision);
-    printf("\nFaculty: %i!", faculty);
-
-    return 0;
+    printf("\nEULER's number: %.*Lf", DECIMAL_DIG, euler);
+    printf("\nPrecision: %.*Lf", DECIMAL_DIG, precision);
+    printf("\nFaculty: %ld!", faculty);
 }
