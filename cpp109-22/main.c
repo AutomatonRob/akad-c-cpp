@@ -5,7 +5,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Function prototypes
+void charCodes();
+
 int main() {
+    charCodes();
+    return 0;
+}
+
+void charCodes() {
     int begin, end, temp;
 
     printf("##################################################");
@@ -47,6 +55,4 @@ int main() {
     for (int i = begin; i <= end; i++) {
         printf("\n%i\t%c", i, i);
     }
-
-    return 0;
 }
