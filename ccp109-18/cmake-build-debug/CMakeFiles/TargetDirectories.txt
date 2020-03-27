@@ -1,3 +1,0 @@
-/cygdrive/c/git/C/ccp109-18/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/git/C/ccp109-18/cmake-build-debug/CMakeFiles/ccp109_18.dir
-/cygdrive/c/git/C/ccp109-18/cmake-build-debug/CMakeFiles/edit_cache.dir
