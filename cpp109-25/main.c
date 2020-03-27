@@ -12,7 +12,7 @@
 // Function prototypes
 void eulerPrecision();
 
-int main() {
+int main(void) {
     eulerPrecision();
     return 0;
 }
