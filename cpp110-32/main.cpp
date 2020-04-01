@@ -9,13 +9,13 @@
 using namespace std;
 
 void kugelRef(double r, double &O, double &V) {
-    O = 4 * M_PI * r * r;
-    V = (4.0 / 3) * M_PI * r * r * r;
+    O = 4 * M_PI * pow(r, 2.0);
+    V = (4.0 / 3) * M_PI * pow(r, 3.0);
 }
 
 void kugelPtr(double r, double *O, double *V) {
-    *O = 4 * M_PI * r * r;
-    *V = (4.0 / 3) * M_PI * r * r * r;
+    *O = 4 * M_PI * pow(r, 2.0);
+    *V = (4.0 / 3) * M_PI * pow(r, 3.0);
 }
 
 int main() {
