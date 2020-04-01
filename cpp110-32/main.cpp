@@ -5,24 +5,25 @@
 
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
-void kugelRef(int r, double& O, double& V) {
+void kugelRef(double r, double &O, double &V) {
     O = 4 * M_PI * r * r;
     V = (4.0 / 3) * M_PI * r * r * r;
 }
 
-void kugelPtr(int r, double *O, double *V) {
+void kugelPtr(double r, double *O, double *V) {
     *O = 4 * M_PI * r * r;
     *V = (4.0 / 3) * M_PI * r * r * r;
 }
 
 int main() {
-    int radius;
-    double oberflaeche = 0.0;
-    double volumen = 0.0;
-    double& oRef = oberflaeche;
-    double& vRef = volumen;
+    double radius, oberflaeche, volumen;
+    oberflaeche = 0.0;
+    volumen = 0.0;
+    double &oRef = oberflaeche;
+    double &vRef = volumen;
 
     cout << "###########################################################" << endl;
     cout << "Kugelumfang und -volumen berechnen" << endl;
