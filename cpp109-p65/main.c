@@ -11,7 +11,7 @@
 void tanteEmma();
 double sumArray(double[], int);
 double getMax(double[], int);
-void inputValues(double[], int);
+void inputValues(double *, int);
 
 int main(void) {
     tanteEmma();
@@ -29,7 +29,7 @@ void tanteEmma() {
 
     // Input
     printf("Please enter the sales:\n");
-    inputValues(monthlySales, NUMBER_OF_MONTHS);
+    inputValues(&monthlySales, NUMBER_OF_MONTHS);
 
     // Calculations
     annualSales = sumArray(monthlySales, NUMBER_OF_MONTHS);
